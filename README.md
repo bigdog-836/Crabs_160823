@@ -26,4 +26,7 @@ crabs db_merge --output merged_total.fasta --uniq no --input mitofish.fasta 12S_
 ```
 crabs insilico_pcr --input merged_total.fasta --output pcr_12s_fish.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
 ```
-5)
+5) Pga
+```
+crabs pga --input merged_total.fasta --database pcr_12s_fish.fasta --output pga_12s_fish.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --speed medium --percid 0.95 --coverage 0.95 --filter_method relaxed
+```
