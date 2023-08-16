@@ -20,6 +20,6 @@ crabs db_download --source taxonomy #use gunzip to unzip file if not automatical
 ```
 3) Merge
 ```
-crabs db_merge --output merged_total.fasta --uniq no --input mitofish.fasta fish_12S_NCBI_fish.fasta bold_fish_lamprey.fasta embl_vrt.fasta
+crabs db_merge --output merged_total.fasta --uniq no --input mitofish.fasta 12S_NCBI_fish.fasta bold_fish_lamprey.fasta embl_vrt.fasta
 ```
 4)
