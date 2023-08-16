@@ -16,5 +16,10 @@ crabs db_download --source bold --database 'Actinopterygii|Petromyzontiformes' -
 ```
 2) Download taxonomy
 ```
-code here
+crabs db_download --source taxonomy #use gunzip to unzip file if not automatically unzipped
 ```
+3) Merge
+```
+crabs db_merge --output merged_total.fasta --uniq no --input mitofish.fasta fish_12S_NCBI_fish.fasta bold_fish_lamprey.fasta embl_vrt.fasta
+```
+4)
