@@ -22,4 +22,8 @@ crabs db_download --source taxonomy #use gunzip to unzip file if not automatical
 ```
 crabs db_merge --output merged_total.fasta --uniq no --input mitofish.fasta 12S_NCBI_fish.fasta bold_fish_lamprey.fasta embl_vrt.fasta
 ```
-4)
+4) Insilico_pcr
+```
+crabs insilico_pcr --input merged_total.fasta --output pcr_12s_fish.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
+```
+5)
