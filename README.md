@@ -28,5 +28,8 @@ crabs insilico_pcr --input merged_total.fasta --output pcr_12s_fish.fasta --fwd 
 ```
 5) Pga
 ```
-crabs pga --input merged_total.fasta --database pcr_12s_fish.fasta --output pga_12s_fish.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --speed medium --percid 0.95 --coverage 0.95 --filter_method relaxed
+crabs pga --input merged_total.fasta --database pcr_12s_fish.fasta --output pga_12s_fish.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --speed medium --percid 0.90 --coverage 0.90 --filter_method relaxed # dropped percid and coverage to 0.90 instead of 0.95 because we were losing important species
 ```
+6) Assign taxa
+```
+crabs assign_tax --input pga_12s_fish.fasta --output pga_12s_fish.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp --missing missing_pga_12s_fish.tsv
