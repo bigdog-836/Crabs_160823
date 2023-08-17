@@ -33,3 +33,11 @@ crabs pga --input merged_total.fasta --database pcr_12s_fish.fasta --output pga_
 6) Assign taxa
 ```
 crabs assign_tax --input pga_12s_fish.fasta --output pga_12s_fish.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp --missing missing_pga_12s_fish.tsv
+```
+7) Dereplicate
+```
+crabs dereplicate --input pga_12s_fish.tsv --output pga_12s_fish_derep.tsv --method uniq_species
+```
+8) Seq cleanup
+```
+
