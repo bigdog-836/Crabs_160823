@@ -42,5 +42,5 @@ crabs dereplicate --input pga_12s_fish.tsv --output pga_12s_fish_derep.tsv --met
 ```
 crabs seq_cleanup --input pga_12s_fish_derep.tsv --output pga_12s_fish_derepe_clean.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
 ```
-9) Visualization
+9) Tax format
 ```
